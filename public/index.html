@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpresSit</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="expresit">ExpresSit</div>
+    <div class="disclaimer">hiding isn't allowed</div>
+    <div class="neon-light"></div>
+    
+    <!-- Auth buttons -->
+    <div class="auth-buttons">
+        <button id="loginBtn" class="login-button">Login</button>
+        <button id="signupBtn" class="signup-button">Sign Up</button>
+    </div>
+
+    <!-- New window with title "Current Mood" and options -->
+    <div class="mood-window mood-window-left">
+        <div class="window-title">Current Mood</div>
+        <table class="mood-options">
+            <tr>
+                <td class="mood-option" data-value="Happy">😊 Happy</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Sad">😢 Sad</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Angry">😡 Angry</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Loved">😍 Loved</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Excited">😃 Excited</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- New window with title "Mood You Want" and options -->
+    <div class="mood-window mood-window-right dimmed" id="moodYouWantBox">
+        <div class="window-title">Mood You Want</div>
+        <table class="mood-options">
+            <tr>
+                <td class="mood-option" data-value="Happy">😊 Happy</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Sad">😢 Sad</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Angry">😡 Angry</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Loved">😍 Loved</td>
+            </tr>
+            <tr>
+                <td class="mood-option" data-value="Excited">😃 Excited</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- New window with title "Keep My Identity" and options -->
+    <div class="identity-window dimmed" id="identityBox">
+        <div class="identity-title">Keep My Identity:</div>
+        <div class="identity-options">
+            <div class="identity-option">
+                <input type="radio" name="identity" value="Anonymous" disabled> Anonymous
+            </div>
+            <div class="identity-option">
+                <input type="radio" name="identity" value="Revealed" disabled> Revealed
+            </div>
+        </div>
+    </div>
+
+    <!-- New window with title "Find My Match" -->
+    <div class="match-window">
+        <div id="connectButton" class="match-title" disabled>Find My Match</div>
+    </div>
+
+    <!-- Include SimplePeer library -->
+    <script src="simplepeer.js"></script>
+
+    <!-- Include Socket.IO library -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Include application script -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+body {
+    background-color: #f5f5f5;
+    border-top: 5px solid black;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.neon-light {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to right, rgb(168, 130, 63), rgb(103, 168, 92), rgb(77, 124, 194), pink, white, rgb(177, 166, 102), orange, indigo);
+    background-size: 200% 100%;
+    animation: neon-animation 10s infinite linear;
+}
+
+@keyframes neon-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.expresit {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: navy;
+    font-size: 50px;
+    font-family: "Husar Bold", sans-serif;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.disclaimer {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 12px;
+    font-family: "Ultra", sans-serif;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.login-button, .signup-button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: blue;
+}
+
+.signup-button {
+    background-color: red;
+}
+
+.mood-window {
+    position: absolute;
+    top: 200px;
+    width: 40%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.mood-window-left {
+    left: 20px;
+}
+
+.mood-window-right {
+    right: 20px;
+}
+
+.window-title {
+    color: rgb(255, 165, 0);
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 20px;
+}
+
+.mood-options {
+    width: 100%;
+}
+
+.mood-option {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #C0C0C0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mood-option:hover {
+    background-color: #f0e68c;
+}
+
+.mood-option:last-child {
+    margin-bottom: 0;
+}
+
+.identity-window {
+    position: absolute;
+    top: 600px;
+    left: 30%;
+    width: 40%;
+    height: 20%;
+    background-color: transparent;
+    border: px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.identity-title {
+    color: rgb(0, 128, 128);
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.identity-options {
+    display: flex;
+    gap: 20px;
+}
+
+.identity-option {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f0e68c;
+    border: 2px solid #DAA520;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.identity-option:hover {
+    background-color: #d4af37;
+}
+
+.match-window {
+    position: absolute;
+    top: 750px;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    background-color: red;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.match-window:hover {
+    background-color: #ff4d4d;
+}
+
+.match-title {
+    color: white;
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+
+.dimmed {
+    opacity: 0.5;
+    pointer-events: none;
+}

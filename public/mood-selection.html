@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Selection - ExpresSit</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ExpresSit</h1>
+        <nav>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='login.html'">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="moodSelection">
+            <div class="box">
+                <h2>Current Mood</h2>
+                <select id="currentMood">
+                    <option value="">Select your mood</option>
+                    <option value="happy">😊 Happy</option>
+                    <option value="sad">😢 Sad</option>
+                    <option value="angry">😡 Angry</option>
+                    <option value="loved">😍 Loved</option>
+                    <option value="excited">😃 Excited</option>
+                </select>
+            </div>
+            <div class="box dimmed" id="moodYouWantBox">
+                <h2>Mood You Want</h2>
+                <select id="moodYouWant" disabled>
+                    <option value="">Select a mood</option>
+                    <option value="happy">😊 Happy</option>
+                    <option value="sad">😢 Sad</option>
+                    <option value="angry">😡 Angry</option>
+                    <option value="loved">😍 Loved</option>
+                    <option value="excited">😃 Excited</option>
+                </select>
+            </div>
+            <div class="box dimmed" id="identityBox">
+                <h2>Keep My Identity:</h2>
+                <label>
+                    <input type="radio" name="identity" value="anonymous" disabled> Anonymous
+                </label>
+                <label>
+                    <input type="radio" name="identity" value="revealed" disabled> Revealed
+                </label>
+                <button id="connectButton" disabled>Connect</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
