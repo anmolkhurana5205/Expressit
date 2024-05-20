@@ -18,7 +18,7 @@
     </div>
 
     <!-- New window with title "Current Mood" and options -->
-    <div class="mood-window mood-window-left">
+    <div class="mood-window mood-window-left" id="currentMoodBox">
         <div class="window-title">Current Mood</div>
         <table class="mood-options">
             <tr>
@@ -79,13 +79,8 @@
         <div id="connectButton" class="match-title" disabled>Find My Match</div>
     </div>
 
-    <!-- Include SimplePeer library -->
-    <script src="simplepeer.js"></script>
-
-    <!-- Include Socket.IO library -->
     <script src="/socket.io/socket.io.js"></script>
-
-    <!-- Include application script -->
+    <script src="simplepeer.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
